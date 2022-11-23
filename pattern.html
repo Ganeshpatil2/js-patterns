@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patern</title>
+</head>
+
+<body>
+    <h3>Number Pattern Pyramid</h3>
+    <script>
+        let a = 5;  //height of pattern
+        let ab = "";
+        
+        //externaml loop
+        for (let i = 1; i <= a; i++) {
+            //internal loop
+            for (let j = 1; j <= i; j++) {
+                ab += j;
+            }
+            ab += "\n";
+        }
+        console.log(ab);
+    </script>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <script>
+        let b = 5;
+        let ba = "";
+        for (let i = 1; i <= b; i++) {
+            for (let k = 1; k <= b - i + 1; k++) {
+                ba += k;
+            }
+            ba += "\n";
+        }
+        console.log(ba);
+    </script>
+    <script>
+        let c = 5;
+        let ac = "";
+        for (let i = 1; i <= c; i++) {
+            for (let k = 1; k <= i; k++) {
+                ac += k;
+            }
+            ac += "\n";
+        }
+        //reverse pyramid
+        for (let i = 1; i <= c - 1; i++) {
+            for (let k = 1; k <= c - i; k++) {
+                ac += k;
+            }
+            ac += "\n";
+        }
+        console.log(ac);
+    </script>
+    <script>
+        let d = 5;
+        let ad = "";
+        for (let i = 1; i <= d; i++) {
+            for (let r = 1; r <= i; r++) {
+                ad += "0" + r + " ";
+            }
+            ad += "\n";
+        }
+        console.log(ad);
+    </script>
+    <script>
+        let e = 5;
+        let ae = "";
+        for (let i = 1; i <= e; i++) {
+            for (let j = 1; j <= i; j++) {
+                ae += i;
+            }
+            ae += "\n";
+        }
+        console.log(ae);
+    </script>
+    <script>
+        let f = 5;
+        let af = "";
+        let counts = 1;
+        for (let i = 1; i <= f; i++) {
+            for (let j = 1; j <= i; j++) {
+                af += counts;
+                counts++;
+            }
+            af += "\n";
+        }
+        console.log(af);
+    </script>
+    <!-- <script>
+            var g, h, i, j;
+            for(i = 5; i >= 1; i--) {
+            for(j = 1; j <= i; j++)
+               document.write(j);
+               for(k = i; k < 5; k++)
+               document.write("&nbsp&nbsp&nbsp&nbsp");
+               for(j = i; j >= 1; j--)
+               document.write(j);
+               document.write("<br>");
+               }
+               console.log(j);
+        </script> -->
+    <script>
+        let l = 5;
+        let al = " ";
+    
+        for (let i = 1; i <= l; i++) {
+            for (let j = 1; j < l - i + 1; j++) {
+                al +=  " ";
+            }
+            for (let k = 1; k <= 2 * i - 1; k++) {
+                al += k;
+            }
+            al += "\n";
+        }
+        for (let i = 1; i <= l - 1; i++) {
+            for (let j = 1; j < i + 1; j++) {
+                al += " ";
+            }
+            for (let k = 1; k <= 2 * (l - i) - 1; k++) {
+                al += k;
+            }
+            al += "\n";
+        }
+        console.log(al);
+    </script>
+    <h3>Alphabet Pattern</h3>
+    <script>
+        let m = 5;
+        let am = "";
+        let count = 0;
+        for (let i = 1; i <= m; i++) {
+            for (let j = 0; j < i; j++) {
+                am += String.fromCharCode(count + 65);
+                count++;
+            }
+            am += "\n";
+        }
+        console.log(am);
+    </script>
+    <script>
+        let n = 5;
+        let an = "";
+        for (let i = 1; i <= n; i++) {
+            for (let j = 0; j < i; j++) {
+                an += String.fromCharCode(j + 65);
+            }
+            an += "\n";
+        }
+        console.log(an);
+    </script>
+    <script>
+        let o = 5;
+        let ao = "";
+        for (let i = 1; i <= o; i++) {
+            for (let j = 1; j < i; j++) {
+                ao += " ";
+            }
+            for (let k = 0; k < 2 * (o - i + 1) - 1; k++) {
+                ao += String.fromCharCode(k + 65);
+            }
+            ao += "\n";
+        }
+        console.log(ao);
+    </script>
+    <script>
+        let p = 5;
+        let ap = "";
+        // Pyramid
+        for (let i = 1; i <= p; i++) {
+            for (let j = 1; j < p - i + 1; j++) {
+                ap += " ";
+            }
+            for (let k = 0; k < 2 * i - 1; k++) {
+                ap += String.fromCharCode(k + 65);
+            }
+            ap += "\n";
+        }
+        // Reverse Pyramid
+        for (let i = 1; i <= p - 1; i++) {
+            for (let j = 1; j < i + 1; j++) {
+                ap += " ";
+            }
+            for (let k = 0; k < 2 * (p - i) - 1; k++) {
+                ap += String.fromCharCode(k + 65);
+            }
+            ap += "\n";
+        }
+        console.log(ap);
+    </script>
+    <!-- <script>
+            let q = 5;
+            let aq = "";
+            let countss = 0;
+            for (let i = 1; i <= q ; i++) {
+             for (let l = 0; m < q - i; l++) {
+              aq += " ";
+            }
+             for (let m = 0; m < 2 * i - 1; m++) {
+             aq += String.fromCharCode(count + 65);
+             count++;
+            }
+             aq += "\n";
+            }
+             console.log(aq);
+        </script> -->
+    <h3>Star Pattern</h3>
+    <script>
+        let r = 5; // row or column count
+        // defining an empty string
+        let ar = "";
+        for (let i = 0; i < r; i++) { // external loop
+            for (let j = 0; j < r; j++) { // internal loop
+                ar += "*";
+            }
+            // newline after each row
+            ar += "\n";
+        }
+        // printing the string
+        console.log(ar);
+    </script>
+
+    <script>
+        let s = 6;
+        let as = "";
+        for (let i = 1; i <= s; i++) {
+            for (let j = 0; j < i; j++) {
+                if (i === s) {
+                    as += "*";
+                }
+                else {
+                    if (j == 0 || j == i - 1) {
+                        as += "*";
+                    }
+                    else {
+                        as += " ";
+                    }
+                }
+            }
+            as += "\n";
+        }
+        console.log(as);
+    </script>
+
+    <script>
+        let t = 5;
+        let at = "";
+        // External loop
+        for (let i = 1; i <= t; i++) {
+            // printing spaces
+            for (let j = 1; j <= t - i; j++) {
+                at += " ";
+            }
+            // printing star
+            for (let k = 0; k < 2 * i - 1; k++) {
+                if (i === 1 || i === t) {
+                    at += "*";
+                }
+                else {
+                    if (k === 0 || k === 2 * i - 2) {
+                        at += "*";
+                    }
+                    else {
+                        at += " ";
+                    }
+                }
+            }
+            at += "\n";
+        }
+        console.log(at);
+    </script>
+
+
+
+</body>
+
+</html>
